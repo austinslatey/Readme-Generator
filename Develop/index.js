@@ -10,16 +10,38 @@ const questions = [{
     name: 'title',
     message: 'what is the title of the repo?'
 }, {
+    type: 'input',
+    name: 'description',
+    message: 'what is the description'
+
+}, {
+    type: 'input',
+    name: 'usage',
+    message: 'what is the purpose of the project?'
+
+}, { 
+    type: 'input',
+    name: 'github',
+    message: 'what is your github user name?'
+
+},
+{
     type: 'list',
     name: 'license',
     message: 'what type of license will you use?',
-    choices: ['MIT', 'APACHE', 'none'] //TODO research license types and add couple more to choices
-},
+    choices: ['MIT', 'GPLv3', 'GPL', 'none'] //TODO research license types and add couple more to choices
+}, {
+    type: 'input',
+    name: 'contactInfo',
+    message: 'what is your contact information?'
+}
+
 // TODO what else do I want in my readme file
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+    const content = generateMarkdown(data)
     
 }
 
@@ -33,7 +55,7 @@ function init() {
         const content = generateMarkdown(data)
 
         // TODO bring file writing into separate function 
-        fs.writeFile(path.join(__dirname, data.title), content, err => {
+        fs.writeFile(path.join(__dirname, `${data.title}.md`), content, err => {
             console.log(err);
         } );
     });
