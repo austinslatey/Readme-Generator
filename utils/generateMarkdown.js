@@ -52,21 +52,36 @@ function generateMarkdown(data) {
 
   ---
 
-  
+  ## User Story
+  ${data.userStory}
 
   ## Description
   ${data.description}
 
-  ## Intended Use
+  ## Installation
+  ${data.installation}
+
+  ## Usage
   ${data.usage}
 
-  ## Credenitals
-  ${data.github}
-  ${data.contactInfo}
+  ## Contributions
+  ${data.contributors}
+
+  ## Tests
+  ${data.tests}
 
   ## License 
   ${data.license}
   ${renderLicenseBadge(data)}
+
+  ## Questions
+
+  If any questions arise..
+
+  Visit my Github at: [https://${data.gitHub}.github.io](https://${data.gitHub}.github.io)
+  
+  Reach out to me by email: ${data.email}
+  
 `;
 }
 
