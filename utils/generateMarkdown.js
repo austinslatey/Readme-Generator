@@ -12,7 +12,7 @@ function renderLicenseBadge({license}) {
     yourLicense = `![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)`
     return yourLicense;
   } else {
-    yourLicense = "N/A"
+    yourLicense = ""
     return yourLicense;
   }
 
@@ -25,7 +25,7 @@ function renderLicenseLink(license) {
   if (license === true) {
     return yourLicense;
   } else {
-    return "";
+    return "checking fu";
      
   }
 
@@ -40,11 +40,14 @@ function generateMarkdown(data) {
 
   ##Table of Contents
 
-
+  * [User Story](#User Story)
   * [Description](#description)
-  * [Intended Use](#Intended-Use)
-  * [Credentials](Credentials)
-  * [License](License)
+  * [Installation](#Installation)
+  * [Usage](#Usage)
+  * [Contributions](#Contributions)
+  * [Tests](#Tests)
+  * [License](#License)
+  * [Questions](#Questions)
 
  
   
@@ -78,8 +81,8 @@ function generateMarkdown(data) {
 
   If any questions arise..
 
-  Visit my Github at: [https://${data.gitHub}.github.io](https://${data.gitHub}.github.io)
-  
+  Visit my Github at: [https://github.com/${data.gitHub}](https://github.com/${data.gitHub})
+
   Reach out to me by email: ${data.email}
   
 `;
