@@ -8,53 +8,74 @@ const path = require('path');
 const questions = [{
     type: 'input',
     name: 'title',
-    message: 'what is the title of the repo?'
-}, {
+    message: 'what is the title of the repo?',
+    validate: (answer) => {
+        if(answer === ''){
+            return 'please enter a title name'
+        }
+        return true
+    } 
+}, 
+{ 
+    type: 'input',
+    name: 'userStory',
+    message: 'What is the user story?'
+}, 
+{
     type: 'input',
     name: 'description',
-    message: 'what is the description'
-
-}, {
+    message: 'What is the description'
+}, 
+{
     type: 'input',
-    name: 'usage',
-    message: 'what is the purpose of the project?'
-
-}, { 
-    type: 'input',
-    name: 'github',
-    message: 'what is your github user name?'
-
+    name: 'installation',
+    message: 'What is needed for installation?'  
 },
 {
+    type: 'input',
+    name: 'usage',
+    message: 'What is the purpose of the project?'
+},
+{
+    type: 'input',
+    name: 'contributors',
+    message: 'Who are the contributors of this project?'
+},
+{
+    type: 'input',
+    name: 'tests',
+    message: 'Provide a test case'
+},
+{
+// Choice list for type of license the user has
     type: 'list',
     name: 'license',
-    message: 'what type of license will you use?',
-    choices: ['MIT', 'GPLv3', 'GPL', 'none'] //TODO research license types and add couple more to choices
-}, {
+    message: 'What type of license will you use?',
+    choices: ['MIT', 'GPLv3', 'GPL', 'none'] 
+}, 
+{ 
     type: 'input',
-    name: 'contactInfo',
-    message: 'what is your contact information?'
-}
+    name: 'github',
+    message: 'What is your GitHub username?'
 
-// TODO what else do I want in my readme file
+}, 
+{
+    // contact information
+    type: 'input',
+    name: 'email',
+    message: 'What is your email address?'
+}
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    const content = generateMarkdown(data)
-    
-}
-
-// TODO: Create a function to initialize app
+// Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then(data => {
         console.log(data);
-        console.log(generateMarkdown(data));
        // writeToFile(data.title, data)
 
         const content = generateMarkdown(data)
 
-        // TODO bring file writing into separate function 
+        //  Write readme file
         fs.writeFile(path.join(__dirname, `${data.title}.md`), content, err => {
             console.log(err);
         } );
