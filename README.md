@@ -40,8 +40,11 @@
   ## License 
   none
 
-  ## Screenshots 
+  ## Screenshots
   ![Terminal-image](./assets/Terminal-SS.png)
+
+  ## Demonstration
+  ![Demo](assets/Untitled_%20Jan%2030,%202022%2010_11%20PM.gif)
   
 
   ## Questions

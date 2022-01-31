@@ -22,7 +22,7 @@
   I want to create a sample readme for demonstration
 
   ## Description
-  A sample to provide a visual generation of a markdown doc
+  A sample to provide a visual generation of a markdown doc]
 
   ## Installation
   See repository's readme
@@ -34,7 +34,7 @@
   austinslatey
 
   ## Tests
-  no test case needed
+  no test case needed'
 
   ## License 
   MIT
