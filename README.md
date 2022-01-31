@@ -31,7 +31,7 @@
   To make developers lives easier by generating the markdown layout upon completion of the series of prompts.
 
   ## Contributions
-  austinslatey (myself)
+    austinslatey (myself)
 
   ## Tests
   No test case needed for this particular project.
@@ -44,7 +44,7 @@
 
   If any questions arise..
 
-  Visit my Github at: [github.com/austinslatey](github.com/austinslatey)
+  Visit my Github at: [https://github.com/austinslatey](https://github.com/austinslatey)
 
   Reach out to me by email: austinslater58@gmail.com
   

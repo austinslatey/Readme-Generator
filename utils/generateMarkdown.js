@@ -25,7 +25,7 @@ function renderLicenseLink(license) {
   if (license === true) {
     return yourLicense;
   } else {
-    return "checking fu";
+    return "";
      
   }
 
@@ -81,7 +81,7 @@ function generateMarkdown(data) {
 
   If any questions arise..
 
-  Visit my Github at: [github.com/${data.gitHub}](github.com/${data.gitHub})
+  Visit my Github at: [https://github.com/${data.gitHub}](https://github.com/${data.gitHub})
 
   Reach out to me by email: ${data.email}
   
