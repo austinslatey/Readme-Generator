@@ -40,14 +40,14 @@ function generateMarkdown(data) {
 
   ##Table of Contents
 
-  * [User Story](#User Story)
+  * [User-Story](#user-story)
   * [Description](#description)
-  * [Installation](#Installation)
-  * [Usage](#Usage)
-  * [Contributions](#Contributions)
-  * [Tests](#Tests)
-  * [License](#License)
-  * [Questions](#Questions)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributions](#contributions)
+  * [Tests](#tests)
+  * [License](#license)
+  * [Questions](#questions)
 
  
   
@@ -55,7 +55,7 @@ function generateMarkdown(data) {
 
   ---
 
-  ## User Story
+  ## User-Story
   ${data.userStory}
 
   ## Description
@@ -81,7 +81,7 @@ function generateMarkdown(data) {
 
   If any questions arise..
 
-  Visit my Github at: [https://github.com/${data.gitHub}](https://github.com/${data.gitHub})
+  Visit my Github at: [github.com/${data.gitHub}](github.com/${data.gitHub})
 
   Reach out to me by email: ${data.email}
   
@@ -89,3 +89,5 @@ function generateMarkdown(data) {
 }
 
 module.exports = generateMarkdown;
+
+

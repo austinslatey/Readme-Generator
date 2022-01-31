@@ -1,21 +1,50 @@
-# README Generator
-- [Professional README Generator Starter Code](#professional-readme-generator-starter-code)
+#README
 
 
-## Description
+  ##Table of Contents
+
+  * [User-Story](#user-story)
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributions](#contributions)
+  * [Tests](#tests)
+  * [License](#license)
+  * [Questions](#questions)
+
+ 
+  
 
 
+  ---
 
+  ## User-Story
+  AS A developer I WANT a README generator SO THAT I can quickly create a professional README for a new project.
 
-## Intended Use
+  ## Description
+  A npm inquirer that generates a markdown file to describe their code inside a repository.
 
+  ## Installation
+  Fork or clone the repository, npm i inquirer on terminal, node index.js to prompt the questions.
 
-## Screenshots
+  ## Usage
+  To make developers lives easier by generating the markdown layout upon completion of the series of prompts.
 
+  ## Contributions
+  austinslatey (myself)
 
+  ## Tests
+  No test case needed for this particular project.
 
-## Demonstration video link
+  ## License 
+  none
+  
 
+  ## Questions
 
-# Credentials
+  If any questions arise..
 
+  Visit my Github at: [github.com/austinslatey](github.com/austinslatey)
+
+  Reach out to me by email: austinslater58@gmail.com
+  
