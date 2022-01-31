@@ -38,6 +38,9 @@
 
   ## License 
   none
+
+  ## Screenshots 
+  ![Terminal-image](./assets/Terminal-SS.png)
   
 
   ## Questions
