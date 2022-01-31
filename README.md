@@ -10,6 +10,7 @@
   * [Contributions](#contributions)
   * [Tests](#tests)
   * [License](#license)
+  * [Screenshots](#screenshots)
   * [Questions](#questions)
 
  
