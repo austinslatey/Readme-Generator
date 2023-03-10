@@ -1,7 +1,7 @@
-#README
+# README
 
 
-  ##Table of Contents
+  ## Table of Contents
 
   * [User-Story](#user-story)
   * [Description](#description)

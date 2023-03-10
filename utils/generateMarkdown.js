@@ -35,10 +35,10 @@ function renderLicenseBadge({license}) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   // TODO come up with a good template for the reademe 
-  return `#${data.title}
+  return `# ${data.title}
 
 
-  ##Table of Contents
+  ## Table of Contents
 
   * [User-Story](#user-story)
   * [Description](#description)
